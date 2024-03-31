@@ -1,11 +1,11 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: gray;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
+h1 {
     background-color: rgb(26, 25, 25);
     color: aqua;
     text-transform: uppercase;
@@ -15,11 +15,11 @@ h1{
     margin-top: 0;
 }
 
-#color-code{
+#color-code {
     font-size: 200%;
 }
 
-#New-color{
+#New-color {
     border: none;
     background-color: white;
     color: cadetblue;
@@ -30,13 +30,12 @@ h1{
     letter-spacing: 2px;
 }
 
-#New-color:hover{
+#New-color:hover {
     background-color: cadetblue;
     color: white;
-
 }
 
-.box{
+.box {
     background-color: blue;
     width: 12%;
     margin: 2%;
@@ -46,18 +45,19 @@ h1{
     transition: background 0.8s;
 }
 
-.container{
+.container {
     margin: 20px auto;
     max-width: 600px;
+    overflow: hidden; /* Add overflow to prevent horizontal scroll */
 }
 
-#stripe{
+#stripe {
     background-color: white;
     text-align: center;
     padding: auto 0;
 }
 
-#message{
+#message {
     text-transform: uppercase;
     height: 100%;
     font-weight: 700;
@@ -66,3 +66,21 @@ h1{
     font-size: inherit;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Adjust maximum width for smaller screens */
+    }
+
+    .box {
+        width: 20%; /* Adjust box width for smaller screens */
+        margin: 1%; /* Adjust margin for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .box {
+        width: 30%; /* Further adjust box width for smaller screens */
+        margin: 1%; /* Further adjust margin for smaller screens */
+    }
+}
