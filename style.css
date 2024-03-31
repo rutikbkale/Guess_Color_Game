@@ -83,4 +83,10 @@ h1 {
         width: 30%; /* Further adjust box width for smaller screens */
         margin: 1%; /* Further adjust margin for smaller screens */
     }
+    #color-code {
+    font-size: 125%;
+    }
+    .box{
+        padding-bottom: 60%;
+        margin-bottom: 30px;
 }
